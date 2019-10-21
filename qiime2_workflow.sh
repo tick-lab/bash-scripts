@@ -182,13 +182,13 @@ printf "${prefix}\t${trimmedR1}\t${trimmedR2}\n" >> $manifest
      $QIIME taxa barplot \
              --i-table ${WD}/Qobj/dada2_ASVs.qza \
              --i-taxonomy ${WD}/Qobj/dada2_rep_taxonomy.qza \
-             --o-visualization ${WD}/Qobj/dada2_tax_barplot \
+             --o-visualization ${WD}/Export/dada2/dada2_tax_barplot \
              --m-metadata-file $MAP
 
      $QIIME taxa barplot \
              --i-table ${WD}/Qobj/table-deblur.qza \
              --i-taxonomy ${WD}/Qobj/deblur_rep_taxonomy.qza \
-             --o-visualization ${WD}/Qobj/deblur_tax_barplot \
+             --o-visualization ${WD}/Export/deblur/deblur_tax_barplot \
              --m-metadata-file $MAP             
      echo Processing complete!
     
