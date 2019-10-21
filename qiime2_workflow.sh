@@ -2,7 +2,8 @@
 ## Swift Biosciences 16S Qiime 2 workflow
 ## Author Benli Chai & Sukhinder Sandhu 20190618
 ## Modified to run on Ixodes, AEM updated 20191023
-## Change below variables to match your paths
+## Make executable by running: chmod +x qiime2_workflow.sh
+## run: ./qiime2_workflow.sh
 
 source /home/lymelab/miniconda2/etc/profile.d/conda.sh
 conda --version
