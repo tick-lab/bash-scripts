@@ -1,3 +1,6 @@
+#If not already executable first run the following command: chmod +x cellranger_basic.sh
+#To run: ./cellranger_basic.sh
+
 #Enviornment setup
 WD=/home/lymelab/lab_members/mann/ # CHANGE ME to your working directory
 BCL=/home/lymelab/lab_members/mann/cellranger-tiny-bcl-1.2.0 # CHANGE ME to your bcl folder
