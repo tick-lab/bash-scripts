@@ -2,7 +2,8 @@
 ## Swift Biosciences 16S Qiime 2 workflow
 ## Author Benli Chai & Sukhinder Sandhu 20190618
 ## Modified to run on Ixodes, AEM updated 20191023
-## Change below variables to match your paths
+## Make executable by running: chmod +x qiime2_workflow.sh
+## run: ./qiime2_workflow.sh
 
 source /home/lymelab/miniconda2/etc/profile.d/conda.sh
 conda --version
@@ -181,13 +182,13 @@ printf "${prefix}\t${trimmedR1}\t${trimmedR2}\n" >> $manifest
      $QIIME taxa barplot \
              --i-table ${WD}/Qobj/dada2_ASVs.qza \
              --i-taxonomy ${WD}/Qobj/dada2_rep_taxonomy.qza \
-             --o-visualization ${WD}/Qobj/dada2_tax_barplot \
+             --o-visualization ${WD}/Export/dada2/dada2_tax_barplot \
              --m-metadata-file $MAP
 
      $QIIME taxa barplot \
              --i-table ${WD}/Qobj/table-deblur.qza \
              --i-taxonomy ${WD}/Qobj/deblur_rep_taxonomy.qza \
-             --o-visualization ${WD}/Qobj/deblur_tax_barplot \
+             --o-visualization ${WD}/Export/deblur/deblur_tax_barplot \
              --m-metadata-file $MAP             
      echo Processing complete!
     
