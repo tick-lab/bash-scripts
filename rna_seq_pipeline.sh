@@ -13,7 +13,7 @@ nextflow pull nf-core/rnaseq # update pipeline
 ###################
 #Envrionment setup
 ###################
-EMAIL=allison.e.mann@gmail.com # change to your email, will send you overview of results
+EMAIL=allison.e.mann@gmail.com # change to your email, will send you overview of results. NOTE: UNTHSC blocks emails from unverified IP addresses, you should use a personal account
 REF=Rnor_6.0 # change to the reference genome you want to map your reads to -- for full list: https://github.com/nf-core/rnaseq/blob/master/conf/igenomes.config
 OUT=/home/lymelab/lab_members/mann/rna_seq # output directory
 RAW=/home/lymelab/data/raw_data/RNA-seq/raw # path to your folder that holds your raw fastq.gz 
