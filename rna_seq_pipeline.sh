@@ -26,7 +26,7 @@ cd $RAW
 #############################
 #using nextflow and nf-core rnaseq pipeline
 #single end
-nextflow run nf-core/rnaseq --reads '*.fastq.gz' --genome $REF -profile conda $ETYPE $EMAIL --singleEnd --max_memory $MAX_MEM &> "$(date +%Y-%m-%d_%H-%M-%S.txt)"
+nextflow run nf-core/rnaseq --reads '*.fastq.gz' --genome $REF -profile conda $ETYPE $EMAIL --outdir $OUT --singleEnd --max_memory $MAX_MEM &> "$(date +%Y-%m-%d_%H-%M-%S.txt)"
 #paired end
 # nextflow run nf-core/rnaseq --reads '*_R{1,2}*.fastq.gz' --genome $REF -profile conda $ETYPE $EMAIL --outdir $OUT --max_memory $MAX_MEM &> "$(date +%Y-%m-%d_%H-%M-%S.txt)"
 
